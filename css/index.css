@@ -2,6 +2,10 @@
   box-sizing: border-box;
 }
 
+div {
+  padding: 5px;
+}
+
 body {
   font-family: "Roboto", sans-serif;
   margin: 0;
@@ -10,4 +14,186 @@ body {
 
 .logo > img {
   width: 50px;
+}
+
+@media (min-width: 0px) and (max-width: 659px) {
+  header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .menu {
+    visibility: hidden;
+    max-height: 0;
+    padding: 0;
+  }
+
+  .hamburger {
+    display: flex;
+    flex-direction: row;
+    color: white;
+    background-color: gray;
+    justify-content: flex-end;
+    margin-top: 0;
+  }
+
+  li {
+    padding: 20px;
+  }
+
+  main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .product {
+    border: 1px solid grey;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5px;
+    width: 90%;
+    margin: 2px;
+  }
+
+  footer {
+    margin-top: 10px;
+    border-top: 1px solid grey;
+  }
+
+  .social {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    justify-content: space-evenly;
+    padding: 0;
+  }
+}
+
+@media (min-width: 600px) and (max-width: 990px) {
+  header {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .logo {
+    margin: 10px auto;
+  }
+
+  header > h1 {
+    margin-right: 40%;
+  }
+
+  .menu {
+    visibility: hidden;
+    max-height: 0;
+    padding: 0;
+  }
+
+  .hamburger {
+    display: flex;
+    flex-direction: row;
+    color: white;
+    background-color: gray;
+    justify-content: flex-end;
+    margin-top: 0;
+  }
+
+  li {
+    padding: 20px;
+  }
+
+  main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .product {
+    border: 1px solid grey;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5px;
+    width: 90%;
+    margin: 2px;
+  }
+
+  footer {
+    margin-top: 10px;
+    border-top: 1px solid grey;
+  }
+
+  .social {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    justify-content: space-around;
+    padding: 0;
+  }
+}
+
+@media (min-width: 991px) {
+  header {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .logo {
+    margin: 10px auto;
+  }
+
+  header > h1 {
+    margin-right: 40%;
+  }
+
+  .hamburger {
+    visibility: hidden;
+    max-height: 0;
+    padding: 0;
+  }
+
+  .menu {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    color: white;
+    background-color: gray;
+    justify-content: flex-end;
+    margin-top: 0;
+  }
+
+  li {
+    padding: 20px;
+  }
+
+  main {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+
+  .product {
+    border: 1px solid grey;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 30%;
+    padding: 5px;
+  }
+
+  footer {
+    margin-top: 10px;
+    border-top: 1px solid grey;
+  }
+
+  .social {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    justify-content: space-around;
+    padding: 0;
+  }
 }
